@@ -3,7 +3,10 @@ Hey, r/learnprogramming, r/java, r/StudentsWhoCode, and hotel tech enthusiasts �
 
 🚀 TL;DR
 What is it?: Java-powered hotel management & booking app with a slick, user-friendly interface.
+chsnged a lot
+## Frontend Architecture
 
+The application uses a React + TypeScript frontend integrated with the existing Java backend and MySQL database.
 Who’s it for?: Anyone — solo backpackers, groups, hotel managers, and devs looking for an awesome project reference.
 
 Coolest features?: Live room availability, secure handling (using multithreaded Java and MySQL), payments, admin dashboard, and filtering galore.
