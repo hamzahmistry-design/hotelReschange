@@ -84,6 +84,38 @@ Payment — select a method (Card/UPI/QR scan), confirm, and get your booking!
 Admin Module — for hotel staff: room updates, pricing tweaks, and live stats.
 
 All wrapped up in modern architecture — RESTful APIs, fast database queries, and robust error handling.
+## 🔌 Backend API & Admin Portal
+
+ACCOMO connects its React frontend to a Java Servlet backend through REST-style API endpoints, with MySQL used for persistent application data.
+
+### Key API Endpoints
+
+| Endpoint | Purpose |
+|---|---|
+| `/api/hotels` | Retrieve hotel listing data |
+| `/api/auth` | Customer authentication and session management |
+| `/api/reservations` | Retrieve the authenticated customer's reservation history |
+| `/api/admin/auth` | Admin login, logout, and authentication state |
+| `/api/admin/metrics` | Retrieve dashboard statistics |
+| `/api/admin/reservations` | View and manage reservations |
+| `/api/admin/customers` | Retrieve customer directory information |
+| `/api/admin/payments` | Review payment records and reports |
+
+### Admin Portal
+
+The admin interface provides a centralized dashboard with hotel and room metrics, successful payment totals, reservation management, customer records, and payment reporting.
+
+### Session & Data Protection
+
+Customer reservation history is restricted to authenticated customers, while administrative endpoints require an authorized admin session. The backend validates access before returning protected data.
+
+### Application URL
+
+When deployed on Apache Tomcat with the `/HotelReservation` context path, the application is available at:
+
+`http://localhost:8081/HotelReservation/`
+
+The API endpoints above are relative to the application context path.
 
 ✨ Why Build ACCOMO?
 Tired of clunky hotel forms and sketchy booking engines? So are we!
@@ -110,4 +142,4 @@ Import the source
 
 Run Apache Tomcat server, connect DB, and go!
 
-Don’t forget to add your own hotel images and UI screenshots to this README
+
