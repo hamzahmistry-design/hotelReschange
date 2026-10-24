@@ -109,12 +109,6 @@ The admin interface provides a centralized dashboard with hotel and room metrics
 
 Customer reservation history is restricted to authenticated customers, while administrative endpoints require an authorized admin session. The backend validates access before returning protected data.
 
-### Application URL
-
-When deployed on Apache Tomcat with the `/HotelReservation` context path, the application is available at:
-
-`http://localhost:8081/HotelReservation/`
-
 The API endpoints above are relative to the application context path.
 
 ✨ Why Build ACCOMO?
